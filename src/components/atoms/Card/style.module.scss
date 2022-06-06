@@ -1,0 +1,19 @@
+@import '../../../assets/styles/colors.scss';
+@import '../../../assets/styles/mixins.scss';
+
+.card {
+  max-width: 20rem;
+  @include rounded;
+  border: 1px solid $card-border;
+  background-color: $white;
+  .header {
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid $card-border;
+  }
+  .body {
+    padding: 1.5rem;
+    .answer {
+      margin-bottom: 1rem;
+    }
+  }
+}
