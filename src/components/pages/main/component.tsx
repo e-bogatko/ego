@@ -1,7 +1,8 @@
+import { FC } from 'react'
 import cards from '../../../assets/content.json'
 import CardList from '../../molecules/CardList'
 
-const Main = () => {
+const Main:FC = () => {
   return (
     <div>
       <CardList cards={cards.content} />
