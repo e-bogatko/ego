@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { ICard } from '../../../models/ICard'
 import style from './style.module.scss'
 
-const FlipCard: FC<ICard> = ({ id, card }) => {
+const FlipCard: FC<ICard> = ({ card }) => {
   return (
     <div className={style.card}>
       <div className={style.header}>{card.front.question}</div>
