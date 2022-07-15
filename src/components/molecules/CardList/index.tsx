@@ -1,7 +1,9 @@
 import { FC } from 'react'
-import Props from './interface'
-import Card from '../../atoms/Card'
 import { ICard } from '../../../models/ICard'
+import Card from '../../atoms/Card'
+interface Props {
+  cards: ICard[]
+}
 
 const CardList: FC<Props> = ({ cards }) => {
   return (

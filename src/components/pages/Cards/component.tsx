@@ -1,11 +1,13 @@
 import { FC } from 'react'
 import cards from '../../../assets/content.json'
+import { ICard } from '../../../models/ICard'
 import CardList from '../../molecules/CardList'
 
-const Main:FC = () => {
+const Main: FC = () => {
   return (
     <div>
-      <CardList cards={cards.content} />
+      <p>Hello</p>
+      <CardList cards={cards.content as ICard[]} />
     </div>
   )
 }
