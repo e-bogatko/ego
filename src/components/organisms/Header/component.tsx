@@ -15,7 +15,7 @@ const Header: FC<Props> = ({ links }) => {
     <header className={style.header}>
       <div className={style.container}>
         {links.map((link) => (
-          <NavLink to={link.to} text={link.text} />
+          <NavLink to={link.to} text={link.text} key={link.to} />
         ))}
       </div>
     </header>

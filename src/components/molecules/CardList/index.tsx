@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { ICard } from '../../../models/ICard'
-import Card from '../../atoms/Card'
+// import Card from '../../atoms/Card'
 interface Props {
   cards: ICard[]
 }
@@ -8,9 +8,9 @@ interface Props {
 const CardList: FC<Props> = ({ cards }) => {
   return (
     <div>
-      {cards.map((card: ICard) => (
+      {/* {cards.map((card: ICard) => (
         <Card id={card.id} key={card.id} card={card.card} />
-      ))}
+      ))} */}
     </div>
   )
 }
