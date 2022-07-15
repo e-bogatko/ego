@@ -6,6 +6,8 @@
   @include rounded;
   border: 1px solid $card-border;
   background-color: $white;
+  position: relative;
+  margin-bottom: 2rem;
   .header {
     padding: 1rem 1.5rem;
     border-bottom: 1px solid $card-border;
@@ -15,5 +17,12 @@
     .answer {
       margin-bottom: 1rem;
     }
+  }
+  .arrowRepeat {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    width: 2rem;
+    height: 2rem;
   }
 }

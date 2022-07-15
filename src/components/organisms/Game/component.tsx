@@ -1,16 +1,18 @@
 import { FC } from 'react'
 import style from './style.module.scss'
-import CardList from '../../molecules/CardList'
+import FlipCard from '../../atoms/Card'
 import { ICard } from '../../../models/ICard'
-
+import Button from '../../atoms/Button'
 interface Props {
-  cards: ICard[]
+  card: ICard | any
+  handleNextCard: () => void
 }
 
-const Game: FC<Props> = ({ cards }) => {
+const Game: FC<Props> = ({ card, handleNextCard }) => {
   return (
     <div className={style.content}>
-      <CardList cards={cards} />
+      <FlipCard card={card} />
+      <Button onClick={handleNextCard}>Следующая карта</Button>
     </div>
   )
 }
