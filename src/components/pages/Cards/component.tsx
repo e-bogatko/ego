@@ -1,15 +1,13 @@
 import { FC } from 'react'
-import cards from '../../../assets/content.json'
-import { ICard } from '../../../models/ICard'
-import CardList from '../../molecules/CardList'
+import Game from '../../organisms/Game'
+import style from './style.module.scss'
 
-const Main: FC = () => {
+const Cards: FC = () => {
   return (
-    <div>
-      <p>Hello</p>
-      <CardList cards={cards.content as ICard[]} />
-    </div>
+    <section className={style.section}>
+      <Game />
+    </section>
   )
 }
 
-export default Main
+export default Cards
