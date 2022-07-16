@@ -17,12 +17,15 @@ const FlipCard: FC<Props> = ({ card }) => {
       </div>
       <div className={style.body}>
         <p className={style.answer}>
+          1)&nbsp;
           {flip ? card.card.back.answers.one : card.card.front.answers.one}
         </p>
         <p className={style.answer}>
+          2)&nbsp;
           {flip ? card.card.back.answers.two : card.card.front.answers.two}
         </p>
         <p className={style.answer}>
+          3)&nbsp;
           {flip ? card.card.back.answers.three : card.card.front.answers.three}
         </p>
       </div>

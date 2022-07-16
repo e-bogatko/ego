@@ -1,8 +1,10 @@
-@import '../../../assets/styles/colors.scss';
-@import '../../../assets/styles/mixins.scss';
+@import '../../../assets/styles/import.scss';
 
 .card {
-  max-width: 20rem;
+  width: 20rem;
+  @include custom(320) {
+    width: 17.5rem;
+  }
   @include rounded;
   border: 1px solid $card-border;
   background-color: $white;
@@ -20,8 +22,8 @@
   }
   .arrowRepeat {
     position: absolute;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
     width: 2rem;
     height: 2rem;
   }
