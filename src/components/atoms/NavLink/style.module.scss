@@ -3,10 +3,16 @@
 .link {
   margin-right: 1.5rem;
   font-size: 1.5rem;
+
   &.active {
     color: $card-border;
   }
   &:last-child {
     margin-right: 0;
+  }
+
+  @include custom(425) {
+    font-size: 1rem;
+    margin-right: 1rem;
   }
 }
