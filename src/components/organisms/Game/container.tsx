@@ -14,7 +14,7 @@ const GameContainer = () => {
   const usedCards = useAppSelector((state) => state.cardsReducer.usedCards)
 
   const getCurrentCardIndex = (): void => {
-    const number = randomInteger(0, cards.content.length)
+    const number = randomInteger(0, cards.content.length - 1)
     if (usedCards.includes(number)) {
       return getCurrentCardIndex()
     } else {
